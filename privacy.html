@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — SweetTales AI</title>
+<meta name="description" content="How SweetTales AI handles your data: what stays on your phone, what is sent, and why.">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --surface: #ffffff;
+    --text: #1c1a24;
+    --muted: #5d5870;
+    --accent: #6b4fbb;
+    --border: #e4e0ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141220;
+      --surface: #1d1a2c;
+      --text: #ece9f4;
+      --muted: #a49dbb;
+      --accent: #b9a4ff;
+      --border: #2e2a42;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0; font-size: .95rem; }
+  h2 {
+    font-size: 1.05rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 2.75rem 0 .75rem;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.3rem; }
+  li { margin-bottom: .4rem; }
+  a { color: var(--accent); }
+  .lead {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 0;
+  }
+  .lead p:last-child { margin-bottom: 0; }
+  /*
+    Il giallo da segnaposto e' sparito il 7 settembre 2026, quando il recapito
+    e' diventato quello vero. Resta il `white-space: nowrap`: un indirizzo
+    spezzato a meta' riga su un telefono stretto si copia male.
+  */
+  .contact { font-weight: 600; white-space: nowrap; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="sub">SweetTales AI &middot; Last updated 7 September 2026</p>
+  </header>
+
+  <div class="lead">
+    <p>SweetTales AI writes personalised bedtime stories for children. This policy explains what the app keeps on your phone, what it sends out, and why.</p>
+    <p>It is written to be read, not to be survived. If anything here is unclear, write to us at <a class="contact" href="mailto:mimaapp@outlook.com">mimaapp@outlook.com</a>.</p>
+  </div>
+
+  <h2>1. What stays on your phone, always</h2>
+  <p>The following never leaves your device:</p>
+  <ul>
+    <li>Your children&rsquo;s names</li>
+    <li>Their profiles: age, gender, the interests you saved</li>
+    <li>Every story the app has written for you</li>
+    <li>Your settings</li>
+  </ul>
+  <p>They are stored in the app&rsquo;s own database on the phone. We have no copy, no backup and no way to read them. Uninstalling the app deletes all of it.</p>
+
+  <h2>2. Your child&rsquo;s name is never sent</h2>
+  <p>This is the part that matters most, so here is exactly how it works.</p>
+  <p>When you ask for a story, the app builds the request on your phone and replaces every real name with a stand-in name before anything is sent. The story is written around the stand-in. When it comes back, your phone puts the real names in again.</p>
+  <p>The result is that our server, and the AI that writes the story, only ever see an invented name. If a name you typed in a free-text field somehow survived this replacement, the app refuses to send the request at all.</p>
+
+  <h2>3. What is sent when you create a story</h2>
+  <ul>
+    <li>The language of the story</li>
+    <li>The age of the child the story is for, and the ages and genders of any children appearing in it &mdash; the story cannot be written for the right age without them</li>
+    <li>How long the story should be</li>
+    <li>The characters, places, objects, moral and topics you chose</li>
+    <li>Anything you typed in the free-text field</li>
+    <li>A summary of the previous story, if you asked for a sequel</li>
+    <li>A random identifier for your device (see section 4)</li>
+  </ul>
+  <p>No names. No contacts, no photos, no location, no microphone, no advertising identifier. The app does not ask for those permissions and cannot access them.</p>
+
+  <h2>4. The device identifier</h2>
+  <p>The first time you open the app, it creates a random string and stores it on your phone. It is not derived from your phone, your account or anything about you, and it cannot be traced back to a person.</p>
+  <p>It exists for one reason: to count how many stories a device has asked for, so that a single device cannot exhaust a service that is free for everyone. We also count requests by IP address, for the same reason.</p>
+
+  <h2>5. Who else sees the request</h2>
+  <p>To write a story, the text of the request is sent to an AI model. Depending on availability, this is Google (Gemini API) or OpenRouter, which routes the request to the same model. They receive the request as described in section 3 &mdash; that is, with stand-in names &mdash; and handle it under their own terms.</p>
+  <p>Our backend runs on Cloudflare, which processes the request in order to deliver it, as any web host does.</p>
+
+  <h2>6. What we keep on our servers</h2>
+  <p>Counters, and nothing else:</p>
+  <ul>
+    <li>How many stories were created each day, and how many failed</li>
+    <li>For each device identifier, how many separate days it has been used</li>
+  </ul>
+  <p>We do not store the text of your stories, the words you typed, or anything that could identify you or your child.</p>
+
+  <h2>7. What the app does not do</h2>
+  <ul>
+    <li>No advertising, and no advertising identifier</li>
+    <li>No analytics or tracking libraries</li>
+    <li>No account, no registration, no email address</li>
+    <li>Nothing is sold, shared or transferred to anyone for their own purposes</li>
+    <li>No purchases</li>
+  </ul>
+
+  <h2>8. Children</h2>
+  <p>The app is used by a parent to write stories for a child. It is not designed to be used by a child alone.</p>
+  <p>We are aware that the ages and genders you provide describe a child. They are sent because a story for a three-year-old is not a story for a nine-year-old, and there is no way to write one without knowing which. They are sent without a name, and they are not stored on our servers.</p>
+
+  <h2>9. Deleting your data</h2>
+  <p>Everything the app holds is on your phone. Uninstalling it, or clearing the app&rsquo;s storage from Android settings, deletes it permanently.</p>
+  <p>On our side there is nothing tied to you except the random identifier from section 4 and its counters. If you want it removed, write to <a class="contact" href="mailto:mimaapp@outlook.com">mimaapp@outlook.com</a> with the identifier and we will delete it.</p>
+
+  <h2>10. Changes</h2>
+  <p>If this policy changes, the date at the top changes with it.</p>
+
+  <h2>11. Contact</h2>
+  <p><a class="contact" href="mailto:mimaapp@outlook.com">mimaapp@outlook.com</a></p>
+
+  <footer>
+    SweetTales AI &middot; com.mimaapp.sweettales
+  </footer>
+
+</div>
+</body>
+</html>
