@@ -79,7 +79,7 @@
 
   <header>
     <h1>Privacy Policy</h1>
-    <p class="sub">SweetTales AI &middot; Last updated 7 September 2026</p>
+    <p class="sub">SweetTales AI &middot; Last updated 22 September 2026</p>
   </header>
 
   <div class="lead">
@@ -112,45 +112,57 @@
     <li>A summary of the previous story, if you asked for a sequel</li>
     <li>A random identifier for your device (see section 4)</li>
   </ul>
-  <p>No names. No contacts, no photos, no location, no microphone, no advertising identifier. The app does not ask for those permissions and cannot access them.</p>
+  <p>No names. No contacts, no photos, no microphone. The story request itself never carries your precise location or your advertising identifier &mdash; the app does not ask for those permissions and cannot access them. (Ads work differently: see section 6.)</p>
 
   <h2>4. The device identifier</h2>
   <p>The first time you open the app, it creates a random string and stores it on your phone. It is not derived from your phone, your account or anything about you, and it cannot be traced back to a person.</p>
-  <p>It exists for one reason: to count how many stories a device has asked for, so that a single device cannot exhaust a service that is free for everyone. We also count requests by IP address, for the same reason.</p>
+  <p>It exists for one reason: to count how many stories a device has asked for, so that a single device cannot exhaust a service that is free for everyone. We also count requests by IP address, for the same reason. The same identifier is also used to credit you when you watch a rewarded video ad &mdash; see section 6.</p>
 
   <h2>5. Who else sees the request</h2>
   <p>To write a story, the text of the request is sent to an AI model. Depending on availability, this is Google (Gemini API) or OpenRouter, which routes the request to the same model. They receive the request as described in section 3 &mdash; that is, with stand-in names &mdash; and handle it under their own terms.</p>
   <p>Our backend runs on Cloudflare, which processes the request in order to deliver it, as any web host does.</p>
 
-  <h2>6. What we keep on our servers</h2>
+  <h2>6. Advertising</h2>
+  <p>The app shows ads, served by Google AdMob: a banner at the bottom of the home screen, and an optional video you can choose to watch in exchange for extra sparks (in-app credit). Watching the video is always your choice; the banner is part of the free version of the app.</p>
+  <p>To show and measure these ads, Google&rsquo;s advertising SDK automatically collects, and shares with Google:</p>
+  <ul>
+    <li>Your device&rsquo;s advertising ID and other device identifiers</li>
+    <li>Your device&rsquo;s IP address, used to estimate your general (not exact) location</li>
+    <li>How you interact with ads and the app around them &mdash; app opens, taps, video views</li>
+    <li>Technical performance data about the app and the ad SDK</li>
+  </ul>
+  <p>None of this is linked to your child&rsquo;s name, profile, or the content of any story &mdash; the advertising SDK never sees any of that; it only ever sees the identifiers and technical data listed above.</p>
+  <p>If you are in the European Economic Area, the UK, or Switzerland, the app asks for your consent before showing personalised ads, the first time you open it. You can change that choice at any time from Settings &rarr; <em>Ad privacy preferences</em>. Outside those regions the same data is collected, but the choice screen does not appear, as it is not legally required there.</p>
+  <p>You can reset or limit your device&rsquo;s advertising identifier at any time from your Android system settings, independently of this app.</p>
+
+  <h2>7. What we keep on our servers</h2>
   <p>Counters, and nothing else:</p>
   <ul>
     <li>How many stories were created each day, and how many failed</li>
     <li>For each device identifier, how many separate days it has been used</li>
   </ul>
-  <p>We do not store the text of your stories, the words you typed, or anything that could identify you or your child.</p>
+  <p>We do not store the text of your stories or the words you typed &mdash; with one exception: if you use the &ldquo;report a problem&rdquo; button on a story, that story&rsquo;s text and your description of the problem are saved on our server so we can review it, and are not shared with anyone beyond us.</p>
 
-  <h2>7. What the app does not do</h2>
+  <h2>8. What the app does not do</h2>
   <ul>
-    <li>No advertising, and no advertising identifier</li>
-    <li>No analytics or tracking libraries</li>
     <li>No account, no registration, no email address</li>
-    <li>Nothing is sold, shared or transferred to anyone for their own purposes</li>
     <li>No purchases</li>
+    <li>Nothing about your child &mdash; their name, profile, or the stories they hear &mdash; is ever sold, shared, or used for advertising</li>
+    <li>No data is sold to anyone, ever</li>
   </ul>
 
-  <h2>8. Children</h2>
+  <h2>9. Children</h2>
   <p>The app is used by a parent to write stories for a child. It is not designed to be used by a child alone.</p>
   <p>We are aware that the ages and genders you provide describe a child. They are sent because a story for a three-year-old is not a story for a nine-year-old, and there is no way to write one without knowing which. They are sent without a name, and they are not stored on our servers.</p>
 
-  <h2>9. Deleting your data</h2>
+  <h2>10. Deleting your data</h2>
   <p>Everything the app holds is on your phone. Uninstalling it, or clearing the app&rsquo;s storage from Android settings, deletes it permanently.</p>
-  <p>On our side there is nothing tied to you except the random identifier from section 4 and its counters. If you want it removed, write to <a class="contact" href="mailto:mimaapp@outlook.com">mimaapp@outlook.com</a> with the identifier and we will delete it.</p>
+  <p>On our side there is nothing tied to you except the random identifier from section 4, its counters, and any problem report you sent us. If you want any of it removed, write to <a class="contact" href="mailto:mimaapp@outlook.com">mimaapp@outlook.com</a> with the identifier and we will delete it.</p>
 
-  <h2>10. Changes</h2>
+  <h2>11. Changes</h2>
   <p>If this policy changes, the date at the top changes with it.</p>
 
-  <h2>11. Contact</h2>
+  <h2>12. Contact</h2>
   <p><a class="contact" href="mailto:mimaapp@outlook.com">mimaapp@outlook.com</a></p>
 
   <footer>
