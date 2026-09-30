@@ -79,7 +79,7 @@
 
   <header>
     <h1>Privacy Policy</h1>
-    <p class="sub">SweetTales AI &middot; Last updated 22 September 2026</p>
+    <p class="sub">SweetTales AI &middot; Last updated 30 September 2026</p>
   </header>
 
   <div class="lead">
@@ -116,7 +116,7 @@
 
   <h2>4. The device identifier</h2>
   <p>The first time you open the app, it creates a random string and stores it on your phone. It is not derived from your phone, your account or anything about you, and it cannot be traced back to a person.</p>
-  <p>It exists for one reason: to count how many stories a device has asked for, so that a single device cannot exhaust a service that is free for everyone. We also count requests by IP address, for the same reason. The same identifier is also used to credit you when you watch a rewarded video ad &mdash; see section 6.</p>
+  <p>It exists for one reason: to count how many stories a device has asked for, so that a single device cannot exhaust a service that is free for everyone. We also count requests by IP address, for the same reason &mdash; but the address itself is never stored: it is turned into a one-way fingerprint first, and those counts are deleted after two days. The same identifier is also used to credit you when you watch a rewarded video ad &mdash; see section 6.</p>
 
   <h2>5. Who else sees the request</h2>
   <p>To write a story, the text of the request is sent to an AI model. Depending on availability, this is Google (Gemini API) or OpenRouter, which routes the request to the same model. They receive the request as described in section 3 &mdash; that is, with stand-in names &mdash; and handle it under their own terms.</p>
@@ -135,15 +135,28 @@
   <p>If you are in the European Economic Area, the UK, or Switzerland, the app asks for your consent before showing personalised ads, the first time you open it. You can change that choice at any time from Settings &rarr; <em>Ad privacy preferences</em>. Outside those regions the same data is collected, but the choice screen does not appear, as it is not legally required there.</p>
   <p>You can reset or limit your device&rsquo;s advertising identifier at any time from your Android system settings, independently of this app.</p>
 
-  <h2>7. What we keep on our servers</h2>
-  <p>Counters, and nothing else:</p>
+  <h2>7. Crash reports</h2>
+  <p>If the app crashes or runs into an unexpected error, it sends a technical report to Sentry (Functional Software, Inc.), a service that collects error reports for developers. Reports are stored in the European Union, in Germany.</p>
+  <p>A report contains:</p>
+  <ul>
+    <li>The error, and where in the app&rsquo;s code it happened</li>
+    <li>Your phone&rsquo;s model, its Android version, the app version, the language and time zone, and technical details such as available memory</li>
+    <li>A short list of technical events just before the error &mdash; for example, whether a request to our server failed</li>
+  </ul>
+  <p>A report does not contain your child&rsquo;s name or profiles, the text of any story or anything you typed, what you tapped, screenshots, your IP address (we have turned off storing it), the advertising ID, or the device identifier from section 4.</p>
+  <p>Reports are used only to find and fix bugs, are not shared with anyone else, and are deleted automatically by Sentry after at most 90 days.</p>
+
+  <h2>8. What we keep on our servers</h2>
+  <p>Counters, and little else:</p>
   <ul>
     <li>How many stories were created each day, and how many failed</li>
-    <li>For each device identifier, how many separate days it has been used</li>
+    <li>For each device identifier: how many separate days it has been used, its sparks balance, and which stories had their narration unlocked with sparks (an internal story number, not its text)</li>
+    <li>A record of each rewarded video credited, deleted after two days</li>
+    <li>Request counts by IP address, stored only as the fingerprint described in section 4, deleted after two days</li>
   </ul>
-  <p>We do not store the text of your stories or the words you typed &mdash; with one exception: if you use the &ldquo;report a problem&rdquo; button on a story, that story&rsquo;s text and your description of the problem are saved on our server so we can review it, and are not shared with anyone beyond us.</p>
+  <p>We do not store the text of your stories or the words you typed &mdash; with one exception: if you use the &ldquo;report a problem&rdquo; button on a story, that story&rsquo;s text (with the stand-in names, never your child&rsquo;s) and the reason you picked are saved on our server so we can review it. A notice of the report reaches us through a private Telegram channel; it is not shared with anyone else.</p>
 
-  <h2>8. What the app does not do</h2>
+  <h2>9. What the app does not do</h2>
   <ul>
     <li>No account, no registration, no email address</li>
     <li>No purchases</li>
@@ -151,18 +164,18 @@
     <li>No data is sold to anyone, ever</li>
   </ul>
 
-  <h2>9. Children</h2>
+  <h2>10. Children</h2>
   <p>The app is used by a parent to write stories for a child. It is not designed to be used by a child alone.</p>
   <p>We are aware that the ages and genders you provide describe a child. They are sent because a story for a three-year-old is not a story for a nine-year-old, and there is no way to write one without knowing which. They are sent without a name, and they are not stored on our servers.</p>
 
-  <h2>10. Deleting your data</h2>
+  <h2>11. Deleting your data</h2>
   <p>Everything the app holds is on your phone. Uninstalling it, or clearing the app&rsquo;s storage from Android settings, deletes it permanently.</p>
   <p>On our side there is nothing tied to you except the random identifier from section 4, its counters, and any problem report you sent us. If you want any of it removed, write to <a class="contact" href="mailto:mimaapp@outlook.com">mimaapp@outlook.com</a> with the identifier and we will delete it.</p>
 
-  <h2>11. Changes</h2>
+  <h2>12. Changes</h2>
   <p>If this policy changes, the date at the top changes with it.</p>
 
-  <h2>12. Contact</h2>
+  <h2>13. Contact</h2>
   <p><a class="contact" href="mailto:mimaapp@outlook.com">mimaapp@outlook.com</a></p>
 
   <footer>
